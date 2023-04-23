@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#add-user-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#modify-user-form {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#modify-user-form input {
+    margin: 0 5px 0 0;
+}
+
+button {
+    cursor: pointer;
+    background: #4caf50;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:not(.delete-button):hover {
+    background: #3e8e41;
+}
+
+button.delete-button {
+    background: red;
+}
+
+button.delete-button:hover {
+    background: #d60000;
+}
+
+#search-input {
+    display: block;
+    padding: 5px;
+    width: -webkit-fill-available;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#user-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#user-list li {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5px;
+}
+
+.actions {
+    text-align: end;
+}
+
+#user-list li:last-child {
+    border-bottom: none;
+}
+
+#user-list li:hover {
+    background: #f5f5f5;
+}
+
+.modify-button {
+    margin-right: 5px;
+}
+
+.user-name {
+    margin: auto 0;
+}
